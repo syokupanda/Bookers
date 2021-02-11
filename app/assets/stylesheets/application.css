@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+
+*{
+  maragin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  margin-left: 30px;
+  margin-bottom: 0;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+/* top.html.erb CSS */
+.top-text{
+  margin: 30px 70px;
+}
+
+.top-start{
+  margin-left: 70px;
+}
+
+/* index.html.erb CSS */
+.index{
+  display: flex;
+}

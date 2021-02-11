@@ -1,0 +1,41 @@
+<h1>Books</h1>
+<div class="index">
+
+  <!-- 投稿のタイトル -->
+  <div class="title">
+    <p>Title</p>
+    <% @books.each do |book| %>
+    <div><%= book.title %></div>
+    <% end %>
+  </div>
+
+  <!-- 投稿の内容 -->
+  <div class="body">
+    <p>Body</p>
+    <% @books.each do |book| %>
+    <div><%= book.body %></div>
+    <% end %>
+  </div>
+
+  <!-- 詳細・編集・削除機能 -->
+  <div class="select">
+    <br>
+    <% @books.each do |book| %>
+    <div>
+      <%= link_to "Show", "/books/#{book.id}" %>
+      <%= link_to "Edit", "/new" %>
+      <%= link_to "Destroy", "/new" %>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="new-text">
+  <h2>New book</h2>
+  <%= form_with model:@book, url:'/books', local:true do |f| %>
+     <p>Title</p>
+     <%= f.text_field :title %>
+     <p>Body</p>
+     <%= f.text_area :body %><br>
+     <%= f.submit 'CreateBook' %>
+  <% end %>
