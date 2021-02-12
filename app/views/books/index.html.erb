@@ -24,12 +24,13 @@
     <div>
       <%= link_to "Show", "/books/#{book.id}" %>
       <%= link_to "Edit", "/books/#{book.id}/edit" %>
-      <%= link_to "Destroy", "/new" %>
+      <%= link_to "Destroy", "/books/#{book.id}", method: :delete, "data-confirm" => "Are you sure？" %>
     </div>
     <% end %>
   </div>
 </div>
 
+<!-- 新規投稿フォーム -->
 <div class="new-text">
   <h2>New book</h2>
   <%= form_with model:@book, url:'/books', local:true do |f| %>
