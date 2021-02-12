@@ -23,7 +23,7 @@
     <% @books.each do |book| %>
     <div>
       <%= link_to "Show", "/books/#{book.id}" %>
-      <%= link_to "Edit", "/new" %>
+      <%= link_to "Edit", "/books/#{book.id}/edit" %>
       <%= link_to "Destroy", "/new" %>
     </div>
     <% end %>

@@ -1,5 +1,7 @@
 <h1>Detail</h1>
-<h2>本のタイトル</h2>
+<h3>本のタイトル</h3>
 <p><%= @book.title %></p>
-<h2>感想</h2>
+<h3>感想</h3>
 <p><%= @book.body %></p>
+
+<%= link_to "Edit", "/books/#{book.id}/edit" %>|<%= link_to "Back", "/books" %>
