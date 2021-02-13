@@ -62,11 +62,10 @@ p{
 }
 
 /* index.html.erb CSS */
-.index{
-  display: flex;
+/*.index{
   margin-top: 15px;
   margin-left: 30px;
-}
+}*/
 
 .title{
   margin: 0 auto;
