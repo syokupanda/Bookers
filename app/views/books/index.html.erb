@@ -1,24 +1,28 @@
+<div class="flash">
+  <%= flash[:destroy] %>
+</div>
+
 <h1>Books</h1>
 <div class="index">
 
   <!-- 投稿のタイトル -->
-  <div class="title">
-    <p>Title</p>
+  <div class="title-box">
+    <p class="title"><b>Title</b></p>
     <% @books.each do |book| %>
     <div><%= book.title %></div>
     <% end %>
   </div>
 
   <!-- 投稿の内容 -->
-  <div class="body">
-    <p>Body</p>
+  <div class="body-box">
+    <p class="body"><b>Body</b></p>
     <% @books.each do |book| %>
     <div><%= book.body %></div>
     <% end %>
   </div>
 
   <!-- 詳細・編集・削除機能 -->
-  <div class="select">
+  <div class="select-box">
     <br>
     <% @books.each do |book| %>
     <div>
@@ -38,5 +42,6 @@
      <%= f.text_field :title %>
      <p>Body</p>
      <%= f.text_area :body %><br>
-     <%= f.submit 'CreateBook' %>
+     <%= f.submit 'Create Book' %>
   <% end %>
+</div>

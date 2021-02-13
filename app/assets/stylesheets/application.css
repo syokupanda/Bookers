@@ -19,12 +19,17 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 13px;
+  line-height: 24px;
 }
 
 h1{
   margin-top: 30px;
   margin-left: 30px;
-  margin-bottom: 0;
+  font-size: 24px;
+}
+
+h2{
+  font-size: 18px;
 }
 
 p{
@@ -32,16 +37,69 @@ p{
   padding: 0;
 }
 
+.flash{
+  margin-left: 30px;
+}
+
 /* top.html.erb CSS */
+.top{
+  margin-left: 20px;
+}
+
 .top-text{
-  margin: 30px 60px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.top-text2{
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 .top-start{
-  margin-left: 60px;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 /* index.html.erb CSS */
 .index{
   display: flex;
+  margin-top: 15px;
+  margin-left: 30px;
+}
+
+.title{
+  margin: 0 auto;
+}
+
+.body-box{
+  margin: 0 15px;
+}
+
+.body{
+  margin: 0 auto;
+}
+
+.new-text{
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+/* show.html.erb CSS */
+.detail{
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.detail-text{
+  margin-bottom: 20px;
+}
+
+/* edit.html.erb CSS */
+.edit-box{
+  margin-left: 30px;
+}
+
+.edit-text{
+  margin-top: 10px;
 }
